@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Recruiter Draft Copilot</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 40px;
+      color: #1f2937;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 26px;
+    }
+
+    .field {
+      margin-bottom: 20px;
+    }
+
+    .label {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .value {
+      background: #f8fafc;
+      padding: 12px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+
+    #emailBody {
+      min-height: 250px;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 12px;
+    }
+
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    #copyButton {
+      background: #e5e7eb;
+    }
+
+    #gmailButton {
+      background: #2563eb;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Recruiter Draft Copilot</h1>
+
+    <div class="field">
+      <div class="label">Match Score</div>
+      <div class="value" id="matchScore">Waiting for AI result...</div>
+    </div>
+
+    
+
+    <div class="field">
+      <div class="label">Recruiter Email</div>
+      <div class="value" id="recruiterEmail">—</div>
+    </div>
+
+    <div class="field">
+      <div class="label">Job Title</div>
+      <div class="value" id="jobTitle">—</div>
+    </div>
+
+    <div class="field">
+      <div class="label">Location</div>
+      <div class="value" id="location">—</div>
+    </div>
+
+    <div class="field">
+      <div class="label">Subject</div>
+      <div class="value" id="subject">—</div>
+    </div>
+
+    <div class="field">
+      <div class="label">Email Draft</div>
+      <div class="value" id="emailBody">
+        Your generated recruiter email will appear here.
+      </div>
+    </div>
+
+    <div class="buttons">
+
+  <button id="connectGmailButton">
+    Connect Gmail
+  </button>
+
+  <button id="copyButton">
+    Copy Email
+  </button>
+
+  <button id="gmailButton">
+    Create Gmail Draft
+  </button>
+
+</div>
+
+  </div>
+
+  <script src="preview.js"></script>
+
+</body>
+</html>

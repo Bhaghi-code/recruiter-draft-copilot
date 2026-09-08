@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Recruiter Draft Copilot",
+  "version": "1.0",
+  "description": "Creates recruiter email drafts from selected job posts.",
+
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "storage",
+    "identity"
+  ],
+
+  "host_permissions": [
+    "https://gmail.googleapis.com/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "oauth2": {
+    "client_id": "934611343266-nbtobrtgs7q6rmdenol500ssmv7cfek9.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.compose"
+    ]
+  }
+}
